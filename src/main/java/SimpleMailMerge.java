@@ -7,6 +7,8 @@
  */
 
 import com.aspose.words.Document;
+import com.aspose.words.SaveFormat;
+import com.aspose.words.SaveOptions;
 
 public class SimpleMailMerge {
 	public static void main(String[] args) throws Exception {
@@ -17,7 +19,8 @@ public class SimpleMailMerge {
 						"City" },
 				new Object[] { "James Bond", "MI5 Headquarters", "Milbank", "",
 						"London" });
-		// Saves the document to disk.
-		doc.save("output/MailMerge Result Out.docx");
+		doc.save("output/MailMerge Result Out.doc",SaveFormat.DOCX);
+		doc.save("output/MailMerge Result Out.pdf",SaveFormat.PDF);
+		doc.save("output/MailMerge Result Out.html",SaveFormat.HTML);
 	}
 }
