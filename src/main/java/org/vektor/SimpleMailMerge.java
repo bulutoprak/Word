@@ -1,3 +1,4 @@
+package org.vektor;
 /* 
  * Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
  *
@@ -8,11 +9,10 @@
 
 import com.aspose.words.Document;
 import com.aspose.words.SaveFormat;
-import com.aspose.words.SaveOptions;
 
 public class SimpleMailMerge {
 	public static void main(String[] args) throws Exception {
-		Document doc = new Document(SimpleMailMerge.class.getResourceAsStream("data/Template.doc"));
+		Document doc = new Document(SimpleMailMerge.class.getResourceAsStream("../../data/Template.doc"));
 		// Fill the fields in the document with user data.
 		doc.getMailMerge().execute(
 				new String[] { "FullName", "Company", "Address", "Address2",

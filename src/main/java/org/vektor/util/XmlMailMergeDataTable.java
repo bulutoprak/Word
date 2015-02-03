@@ -1,3 +1,4 @@
+package org.vektor.util;
 /* 
  * Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
  *

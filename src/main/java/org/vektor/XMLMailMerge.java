@@ -1,3 +1,4 @@
+package org.vektor;
 /* 
  * Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
  *
@@ -8,6 +9,8 @@
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.vektor.util.XmlMailMergeDataTable;
 
 import java.io.File;
 import java.net.URI;
@@ -29,10 +32,10 @@ public class XMLMailMerge {
 				.newDocumentBuilder();
 		// Parse the XML data.
 		org.w3c.dom.Document xmlData = db.parse(XMLMailMerge.class
-				.getResourceAsStream("data/Customers.xml"));
+				.getResourceAsStream("../../data/Customers.xml"));
 
 		// Open a template document.
-		Document doc = new Document(XMLMailMerge.class.getResourceAsStream("data/TestFile.doc"));
+		Document doc = new Document(XMLMailMerge.class.getResourceAsStream("../../data/TestFile.doc"));
 
 		// Note that this class also works with a single repeatable region (and
 		// any nested regions).
